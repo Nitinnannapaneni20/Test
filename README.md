@@ -47,6 +47,10 @@ cd joke-generator-backend
 
 ### 2️⃣ Install Dependencies
 ```bash
+
+# Please move to the backend directory using
+cd backend/
+
 # Install production dependencies
 npm install express cors sqlite3 sqlite
 
@@ -113,7 +117,7 @@ npm run dev
 
 ### Get Random Joke
 ```http
-GET /api/joke/random
+GET http://localhost:8000/api/joke/random
 ```
 
 **Response:**
@@ -122,19 +126,6 @@ GET /api/joke/random
   "id": 1,
   "setup": "Why don't scientists trust atoms?",
   "punchline": "Because they make up everything!"
-}
-```
-
-### Health Check
-```http
-GET /api/health
-```
-
-**Response:**
-```json
-{
-  "status": "OK",
-  "timestamp": "2024-01-20T10:30:00.000Z"
 }
 ```
 
